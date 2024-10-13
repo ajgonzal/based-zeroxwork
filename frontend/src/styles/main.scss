@@ -1,0 +1,71 @@
+//web2/frontend/src/styles/main.scss
+
+// Import UIkit's core styles
+@import "uikit/src/scss/variables";
+@import "uikit/src/scss/uikit";
+@import "uikit/src/scss/components/base.scss";
+@import "uikit/src/scss/components/grid.scss";
+@import "uikit/src/scss/components/button.scss";
+
+// Your custom styles here
+html, body {
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+}
+.app-container {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  flex-grow: 1;
+}
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-logo {
+  max-width: calc(90% - 60px); // Adjust the size as needed
+  width: 90%;
+  height: auto;
+}
+
+#root {
+  overflow: auto;
+}
+
+.markdown-body img {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  float: right;
+  margin-left: 20px;
+}
+.uk-overlay-primary {
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+}
+
+.uk-card-title,
+.uk-text-meta {
+  margin: 0; /* Reduce margin inside the overlay */
+}
+
+/* Custom styles for reducing padding and margin in the overlay */
+.uk-overlay-primary {
+  padding: 10px 20px; /* Reduce padding inside the overlay */
+}
+
+.uk-card-title {
+  font-size: 1.2rem; /* Adjust font size if necessary */
+
+}
+
+.uk-text-meta {
+  font-size: 0.9rem; /* Adjust font size for the metadata */
+}
+.uk-card.markdown-body p {
+  word-break: break-word;
+}

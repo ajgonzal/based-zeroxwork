@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "dockerfilePath": "./Dockerfile",
+  "volumes": [
+    {
+      "volumeName": "zeroxwork-images-volume",
+      "containerPath": "/usr/src/app/backend/public"
+    },
+    {
+      "volumeName": "/home/pablo/ZeroxWork/.vision-api-credential.json",
+      "containerPath": "/usr/src/app/backend/.vision-api-credential.json"
+    }
+  ]
+}
