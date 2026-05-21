@@ -14,6 +14,7 @@ import imageRoutes from './routes/image';
 import userRoutes from "./routes/user";
 import walletRoutes from "./routes/wallet";
 import blogRoutes from "./routes/blog";
+import youtubeRoutes from "./routes/youtube";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -61,6 +62,7 @@ const run = async () => {
     app.use('/api/user', userRoutes);
     app.use('/api/wallet', walletRoutes);
     app.use('/api/blog', blogRoutes);
+    app.use('/api/youtube', youtubeRoutes);
 
     const port = process.env.PORT || 3000;
     console.log("Listening...")
